@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/sv"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="0.0dip"
+    android:paddingTop="4.0dip">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:layout_weight="5.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@id/noteEt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5.0"
+                android:background="@drawable/textfield_activated_holo_dark"
+                android:text="This is a note!"
+                android:textColor="@color/dialog_edit_text"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:layout_weight="5.0"
+            android:text="@string/highlight_color"
+            android:textColor="@color/material_grey_700"
+            android:textSize="14.0sp" />
+
+        <FrameLayout
+            android:id="@id/colorLay"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0">
+
+            <View
+                android:id="@id/colorV"
+                android:layout_width="48.0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="8.0dip"
+                android:background="#ffff00ff" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/do_not_ask_again"
+        android:textColor="@color/material_grey_700"
+        android:textSize="14.0sp" />
+</LinearLayout>

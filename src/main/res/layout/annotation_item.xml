@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@id/infoLay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@id/cardView"
+        style="@style/AnnotCardView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@id/overLay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="8.0dip">
+
+            <LinearLayout
+                android:id="@id/nameLay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1.0dip"
+                android:orientation="horizontal"
+                android:paddingBottom="1.0dip"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:paddingTop="5.0dip">
+
+                <ImageView
+                    android:id="@id/ImageView01"
+                    android:layout_width="24.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:padding="1.0dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/bmnote" />
+
+                <TextView
+                    android:id="@id/timeTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3.0dip"
+                    android:layout_weight="5.0"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingBottom="1.0dip"
+                    android:text="Alice's Adventures in Wonderland"
+                    android:textColor="@color/material_grey_700"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/material_grey_500" />
+
+            <com.flyersoft.staticlayout.BookmarkItem
+                android:id="@id/TextView01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5.0"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:paddingTop="8.0dip"
+                android:text="original text"
+                android:textColor="@color/material_grey_900"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@id/noteTv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5.0"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:paddingTop="2.0dip"
+                android:text="added note"
+                android:textColor="@color/material_grey_800"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@id/overflow1"
+            android:layout_width="49.0dip"
+            android:layout_height="49.0dip"
+            android:layout_gravity="center|right|top"
+            android:layout_marginLeft="0.0dip"
+            android:layout_weight="5.0"
+            android:paddingBottom="21.0dip"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="8.0dip"
+            android:paddingTop="0.0dip"
+            android:src="@drawable/overflow_small" />
+    </RelativeLayout>
+</LinearLayout>

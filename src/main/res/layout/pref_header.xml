@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/headerLay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/small_options_top">
+
+    <TextView
+        android:id="@id/titleB"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="5.0"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:paddingLeft="24.0dip"
+        android:text="Visual Options"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@id/funcB"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center|right"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginRight="2.0dip"
+        android:layout_marginTop="8.0dip"
+        android:background="@drawable/my_about_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="0.0dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/a_remove"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@id/exitB"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center|right"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginTop="8.0dip"
+        android:background="@drawable/my_about_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="0.0dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dialog_close2" />
+</LinearLayout>

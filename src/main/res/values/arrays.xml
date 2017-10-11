@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ScreenOrientation">
+        <item>自动</item>
+        <item>横屏</item>
+        <item>竖屏</item>
+    </string-array>
+    <string-array name="ScreenOrientation2">
+        <item>自动</item>
+        <item>横屏</item>
+        <item>竖屏</item>
+        <item>横屏(反向)</item>
+        <item>竖屏(反向)</item>
+        <item>横屏(感应器)</item>
+        <item>竖屏(感应器)</item>
+    </string-array>
+    <string-array name="all_files_bookmark">
+        <item>删除本书所有书签</item>
+        <item>删除全部书签列表</item>
+    </string-array>
+    <string-array name="auto_scroll_mode">
+        <item>卷帘式(像素)</item>
+        <item>卷帘式(按行)</item>
+        <item>按像素滚屏</item>
+        <item>按行滚屏</item>
+        <item>按页滚屏(有进度提示)</item>
+    </string-array>
+    <string-array name="catalog_popup_menu">
+        <item>打开</item>
+        <item>编辑</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="controls">
+        <item>向上翻页</item>
+        <item>向下翻页</item>
+        <item>上一文件</item>
+        <item>下一文件</item>
+        <item>搜索</item>
+        <item>书签</item>
+        <item>显示书籍信息</item>
+        <item>改变配色方案</item>
+        <item>打开选项菜单</item>
+        <item>打开导航菜单</item>
+        <item>字体大小调节</item>
+        <item>显示章节目录</item>
+        <item>前一章节</item>
+        <item>下一章节</item>
+        <item>返回书库</item>
+        <item>无</item>
+        <item>退出整个程序</item>
+        <item>页面文字摘录</item>
+        <item>自动滚屏</item>
+    </string-array>
+    <string-array name="dict_list">
+        <item>ColorDict/BlueDict/GoldenDict离线词典</item>
+        <item>Fora离线词典</item>
+        <item>云词（离线词典）</item>
+        <item>新华字典（离线词典）</item>
+        <item>百度在线词典</item>
+        <item>海词在线词典</item>
+        <item>有道在线词典</item>
+        <item>必应在线词典</item>
+        <item>自定义在线词典...</item>
+    </string-array>
+    <string-array name="dictionary_list">
+        <item>词典</item>
+        <item>翻译</item>
+        <item>维基百科</item>
+        <item>Google</item>
+        <item>生词本...</item>
+        <item>翻译设置...</item>
+    </string-array>
+    <string-array name="edge_list">
+        <item>左边</item>
+        <item>右边</item>
+        <item>上边</item>
+        <item>下边</item>
+    </string-array>
+    <string-array name="exit_menu">
+        <item>返回书库</item>
+        <item>返回桌面(保留阅读状态)</item>
+        <item>退出整个程序</item>
+    </string-array>
+    <string-array name="file_related">
+        <item>加入我的珍藏</item>
+        <item>阅读文件</item>
+        <item>用外部程序打开...</item>
+        <item>拷贝文件</item>
+        <item>移动文件</item>
+        <item>文件改名</item>
+        <item>删除文件</item>
+        <item>新建文件夹</item>
+        <item>多选模式</item>
+        <item>排序</item>
+    </string-array>
+    <string-array name="flip_animation_list">
+        <item>无</item>
+        <item>纸张翻页效果</item>
+        <item>水平切换</item>
+        <item>上下滚动</item>
+        <item>渐隐式</item>
+        <item>纸张翻页2(兼容手势命令模式)</item>
+    </string-array>
+    <string-array name="more_options_menu">
+        <item>页面文字摘录</item>
+        <item>全文搜索</item>
+        <item>书籍信息</item>
+        <item>章节目录</item>
+        <item>切换到上一章节</item>
+        <item>切换到下一章节</item>
+        <item>打开上一个文件</item>
+        <item>打开下一个文件</item>
+        <item>书签管理</item>
+        <item>浮动工具栏</item>
+        <item>字体大小调节</item>
+    </string-array>
+    <string-array name="note_list">
+        <item>显示</item>
+        <item>编辑</item>
+        <item>删除</item>
+        <item>标注列表</item>
+    </string-array>
+    <string-array name="notes_import_export">
+        <item>分享高亮与备注...</item>
+        <item>导出到文件</item>
+        <item>从文件导入</item>
+    </string-array>
+    <string-array name="one_file_bookmark">
+        <item>打开</item>
+        <item>删除</item>
+        <item>全部删除</item>
+    </string-array>
+    <string-array name="operations">
+        <item>改名</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="options_menu">
+        <item>可视选项</item>
+        <item>控制选项</item>
+        <item>其它选项</item>
+        <item>配色方案</item>
+        <item>更多操作...</item>
+        <item>关于本软件...</item>
+        <item>退出...</item>
+    </string-array>
+    <string-array name="pdf_render_quality_items">
+        <item>高</item>
+        <item>中</item>
+        <item>低</item>
+    </string-array>
+    <string-array name="pdf_view_mode_items">
+        <item>自动选择</item>
+        <item>单页模式</item>
+        <item>连续模式</item>
+    </string-array>
+    <string-array name="shelf_filter_options">
+        <item>全部</item>
+        <item>-</item>
+        <item>未读</item>
+        <item>正在阅读</item>
+        <item>已读</item>
+    </string-array>
+    <string-array name="shelf_popup">
+        <item>加入我的珍藏</item>
+        <item>编辑书籍信息</item>
+        <item>从我的书架里移除</item>
+        <item>删除书籍文件</item>
+    </string-array>
+    <string-array name="shelf_read_history">
+        <item>从最近阅读里移除本书</item>
+        <item>清除最近阅读列表</item>
+        <item>加入我的珍藏</item>
+        <item>删除书籍文件</item>
+    </string-array>
+    <string-array name="shelf_sort_by">
+        <item>书名</item>
+        <item>作者</item>
+        <item>导入时间</item>
+        <item>存储目录</item>
+    </string-array>
+    <string-array name="sort_by">
+        <item>按名称(升序)</item>
+        <item>按大小(升序)</item>
+        <item>按时间(升序)</item>
+        <item>按名称(降序)</item>
+        <item>按大小(降序)</item>
+        <item>按时间(降序)</item>
+    </string-array>
+    <string-array name="tts_divides">
+        <item>逗号</item>
+        <item>句号</item>
+        <item>整段</item>
+        <item>整页</item>
+    </string-array>
+    <string-array name="disable_css_styles">
+        <item>禁用字体类型 (粗体/斜体/下划线)</item>
+        <item>禁用字体大小 (小/大/em指定)</item>
+        <item>禁用指定颜色 (文本及背景颜色)</item>
+        <item>禁用对齐排版 (左/中/右)</item>
+        <item>禁用对齐排版 (全书左右对齐)</item>
+        <item>禁用缩进符 (px/pt/em/in)</item>
+        <item>禁用段落间隔(margin/padding)</item>
+    </string-array>
+    <string-array name="dict_list_url">
+        <item>ColorDict3</item>
+        <item>Fora</item>
+        <item>YunCi</item>
+        <item>XinHua</item>
+        <item>http://dict.baidu.com/s?wd=%s&amp;ie=utf-8</item>
+        <item>http://3g.dict.cn/s.php?q=%s</item>
+        <item>http://dict.youdao.com/search?q=%s</item>
+        <item>http://dict.bing.com.cn/?q=%s</item>
+        <item>Customized</item>
+    </string-array>
+</resources>

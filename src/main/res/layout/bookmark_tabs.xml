@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/include1"
+        layout="@layout/pref_header"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip" />
+
+    <LinearLayout
+        android:id="@id/bmTabOneBook"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5.0"
+        android:background="@color/list_dialog_background"
+        android:cacheColorHint="#00000000"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@id/bmListView01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="8.0"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="0.0dip"
+            android:listSelector="@android:color/transparent" />
+
+        <LinearLayout
+            android:id="@id/bk1TypeLay"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:layout_gravity="bottom"
+            android:background="#ffaaaaaa"
+            android:orientation="horizontal"
+            android:paddingLeft="4.0dip"
+            android:paddingRight="2.0dip">
+
+            <LinearLayout
+                android:id="@id/exportLay"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_list_selector"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@id/bmexportIv"
+                    android:layout_width="24.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="4.0dip"
+                    android:paddingTop="2.0dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_menu_share_v" />
+
+                <TextView
+                    android:id="@id/bmexport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="8.0dip"
+                    android:gravity="center"
+                    android:paddingLeft="4.0dip"
+                    android:paddingRight="4.0dip"
+                    android:tag="\ 1"
+                    android:text="@string/share"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5.0" />
+
+            <LinearLayout
+                android:id="@id/bookmarkLay"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_list_selector"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@id/bookmarkIv"
+                    android:layout_width="20.0dip"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/bmtag" />
+
+                <TextView
+                    android:id="@id/bookmarkTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="4.0dip"
+                    android:paddingRight="8.0dip"
+                    android:tag="\ 1"
+                    android:text="@string/bookmark"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/noteLay"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_list_selector"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@id/noteIv"
+                    android:layout_width="20.0dip"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/bmnote" />
+
+                <TextView
+                    android:id="@id/noteTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:tag="\ 1"
+                    android:text="@string/annotation"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/highlightLay"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_list_selector"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@id/highlightIv"
+                    android:layout_width="20.0dip"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/bmhighlight" />
+
+                <TextView
+                    android:id="@id/highlightTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="6.0dip"
+                    android:paddingRight="4.0dip"
+                    android:tag="\ 1"
+                    android:text="@string/highlight"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/colorTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_list_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="8.0dip"
+                android:tag="\ 1"
+                android:text=">>"
+                android:textColor="#ffffffff"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/bk1AddNewLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/small_options_top"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@id/bmAddButton"
+                android:layout_width="fill_parent"
+                android:layout_height="38.0dip"
+                android:layout_weight="3.0"
+                android:background="@drawable/btn_default_holo_dark2"
+                android:text="@string/add_new_bookmark"
+                android:textSize="14.0sp" />
+
+            <ImageButton
+                android:id="@id/searchB"
+                android:layout_width="32.0dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_about_selector"
+                android:focusable="true"
+                android:padding="5.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/abc_ic_search_api_mtrl_alpha" />
+
+            <ImageButton
+                android:id="@id/bookmarkOption"
+                android:layout_width="32.0dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_about_selector"
+                android:focusable="true"
+                android:padding="3.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/searchoptions" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

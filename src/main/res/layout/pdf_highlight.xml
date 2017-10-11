@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/material_grey_300"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/include1"
+        layout="@layout/pref_header"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip" />
+
+    <ScrollView
+        android:id="@id/sv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5.0"
+        android:padding="8.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dip"
+                android:layout_marginTop="8.0dip">
+
+                <RadioButton
+                    android:id="@id/radioButton1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40.0"
+                    android:text="@string/highlight_color"
+                    android:textSize="16.0sp" />
+
+                <FrameLayout
+                    android:id="@id/color1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="50.0"
+                    android:background="#ff333333">
+
+                    <ImageView
+                        android:id="@id/colorIb"
+                        android:layout_width="36.0dip"
+                        android:layout_height="32.0dip"
+                        android:layout_gravity="center|right"
+                        android:background="@android:drawable/ic_menu_more" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dip">
+
+                <RadioButton
+                    android:id="@id/radioButton2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40.0"
+                    android:text="@string/underline"
+                    android:textSize="16.0sp" />
+
+                <FrameLayout
+                    android:id="@id/color2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="50.0"
+                    android:background="#ff333333">
+
+                    <ImageView
+                        android:id="@id/colorIb"
+                        android:layout_width="36.0dip"
+                        android:layout_height="32.0dip"
+                        android:layout_gravity="center|right"
+                        android:background="@android:drawable/ic_menu_more" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dip">
+
+                <RadioButton
+                    android:id="@id/radioButton3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40.0"
+                    android:text="@string/strikethrough"
+                    android:textSize="16.0sp" />
+
+                <FrameLayout
+                    android:id="@id/color3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="50.0"
+                    android:background="#ff333333">
+
+                    <ImageView
+                        android:id="@id/colorIb"
+                        android:layout_width="36.0dip"
+                        android:layout_height="32.0dip"
+                        android:layout_gravity="center|right"
+                        android:background="@android:drawable/ic_menu_more" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dip">
+
+                <RadioButton
+                    android:id="@id/radioButton4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40.0"
+                    android:text="@string/squiggly_underline"
+                    android:textSize="16.0sp" />
+
+                <FrameLayout
+                    android:id="@id/color4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="50.0"
+                    android:background="#ff333333">
+
+                    <ImageView
+                        android:id="@id/colorIb"
+                        android:layout_width="36.0dip"
+                        android:layout_height="32.0dip"
+                        android:layout_gravity="center|right"
+                        android:background="@android:drawable/ic_menu_more" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/LinearLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="4.0dip">
+
+                <View
+                    android:id="@id/View2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="28.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="5.0"
+                    android:background="#88ee0099"
+                    android:clickable="true" />
+
+                <View
+                    android:id="@id/View3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="28.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="5.0"
+                    android:background="#ff00ff44"
+                    android:clickable="true" />
+
+                <View
+                    android:id="@id/View4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="28.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="5.0"
+                    android:background="#ee00aaff"
+                    android:clickable="true" />
+            </LinearLayout>
+
+            <View
+                style="@style/SplitterLight"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginTop="8.0dip"
+                android:background="@color/material_grey_500" />
+
+            <CheckBox
+                android:id="@id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_highlight_template"
+                android:textSize="13.0sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@id/CheckBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/direct_highlight"
+                android:textSize="13.0sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@id/CheckBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/magnifier"
+                android:textSize="13.0sp"
+                android:textStyle="italic" />
+
+            <View
+                style="@style/SplitterLight"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginTop="2.0dip"
+                android:background="@color/material_grey_500" />
+
+            <CheckBox
+                android:id="@id/CheckBox4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/highlight_all"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@id/include2"
+        layout="@layout/pref_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
