@@ -126,6 +126,7 @@ import com.flyersoft.components.CSS.Style;
 import com.flyersoft.components.ColorDialog;
 import com.flyersoft.components.ColorDialog.OnSaveColor;
 import com.flyersoft.moonreader.PrefSelectHighlight.OnSelectColor;
+import com.flyersoft.staticlayout.DotImageView;
 import com.flyersoft.staticlayout.MRTextView;
 import com.flyersoft.staticlayout.MRTextView.MarginF;
 import com.flyersoft.staticlayout.MyLayout;
@@ -1857,7 +1858,7 @@ public class ActivityTxt extends AppCompatActivity implements Runnable, OnTouchL
             public boolean onTouch(View v, MotionEvent event) {
                 ActivityTxt.this.showSelectBar();
                 switch (event.getAction()) {
-                    case 0:
+                    case MotionEvent.ACTION_DOWN:
                         ActivityTxt activityTxt = ActivityTxt.this;
                         if (!(v == ActivityTxt.this.dot1 || v == ActivityTxt.this.dot2)) {
                             v = null;
@@ -1869,14 +1870,14 @@ public class ActivityTxt extends AppCompatActivity implements Runnable, OnTouchL
                             break;
                         }
                         break;
-                    case 1:
+                    case MotionEvent.ACTION_UP:
                         if (ActivityTxt.this.dot != null) {
                             ActivityTxt.this.highlightText(true, -1, -1);
                             ActivityTxt.this.dot = null;
                             break;
                         }
                         break;
-                    case 2:
+                    case MotionEvent.ACTION_MOVE:
                         if (ActivityTxt.this.dot != null) {
                             ActivityTxt.this.select_move_down((float) ActivityTxt.this.dot.getTop());
                             int l = ((int) event.getRawX()) - ActivityTxt.this.hLastX;
@@ -6187,7 +6188,6 @@ public class ActivityTxt extends AppCompatActivity implements Runnable, OnTouchL
         A.error(e);
     }
 
-    @Override
     public boolean onTouch(View v, MotionEvent event) {
         recordUserActiveTime();
         if (event.getAction() == 1) {
@@ -8324,7 +8324,7 @@ public class ActivityTxt extends AppCompatActivity implements Runnable, OnTouchL
                                     }
                                     ActivityTxt.this.footnoteDlg = null;
                                     if (ActivityTxt.this.footnoteDlg2 != null) {
-                                        ActivityTxt.this.footnoteDlg2.dismiss();
+//                                        ActivityTxt.this.footnoteDlg2.dismiss();
                                     }
                                     ActivityTxt.this.footnoteDlg2 = null;
                                     if (url.startsWith("http:") || url.startsWith("https:")) {
@@ -13107,8 +13107,8 @@ public class ActivityTxt extends AppCompatActivity implements Runnable, OnTouchL
         this.dot1.setAnimation(null);
         this.dot2.setAnimation(null);
         showhBar();
-        this.dot1.setVisibility(0);
-        this.dot2.setVisibility(0);
+        this.dot1.setVisibility(View.VISIBLE);
+        this.dot2.setVisibility(View.VISIBLE);
     }
 
     public void showhBar() {
@@ -13740,6 +13740,13 @@ public class ActivityTxt extends AppCompatActivity implements Runnable, OnTouchL
         return 0;
     }
 
+    /**
+     * TODO  重要
+     * @param setDotPosition
+     * @param offset1
+     * @param offset2
+     */
+
     private void highlightText(boolean setDotPosition, int offset1, int offset2) {
         if (!isPdf() || this.pdf.textReflow) {
             MyLayout lo = this.txtView.getLayout();
@@ -13976,8 +13983,8 @@ public class ActivityTxt extends AppCompatActivity implements Runnable, OnTouchL
     }
 
     private void showDotViews() {
-        this.dot1.setVisibility(0);
-        this.dot2.setVisibility(0);
+        this.dot1.setVisibility(View.VISIBLE);
+        this.dot2.setVisibility(View.VISIBLE);
     }
 
     private boolean hideDotViews() {

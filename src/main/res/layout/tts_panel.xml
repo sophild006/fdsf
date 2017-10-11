@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="12.0dip"
+        android:background="@drawable/hl_btn_shadow" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff909090"
+        android:orientation="vertical"
+        android:padding="1.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.0">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="10.0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4.0dip"
+                    android:paddingLeft="9.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text="@string/tts_volume"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0sp" />
+
+                <SeekBar
+                    android:id="@id/tts_volume"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:layout_weight="1.0"
+                    android:max="15"
+                    android:progress="10"
+                    android:thumb="@drawable/scrubber_control_selector_holo3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="10.0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4.0dip"
+                    android:paddingLeft="9.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text="@string/tts_pitch"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0sp" />
+
+                <SeekBar
+                    android:id="@id/tts_pitch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:layout_weight="1.0"
+                    android:max="20"
+                    android:progress="10"
+                    android:thumb="@drawable/scrubber_control_selector_holo3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="9.0"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5.0"
+                        android:paddingBottom="4.0dip"
+                        android:paddingLeft="9.0dip"
+                        android:paddingTop="8.0dip"
+                        android:singleLine="true"
+                        android:text="@string/tts_speed"
+                        android:textColor="#ffffffff"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@id/resetTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/my_about_selector"
+                        android:paddingBottom="2.0dip"
+                        android:paddingLeft="8.0dip"
+                        android:paddingRight="8.0dip"
+                        android:paddingTop="8.0dip"
+                        android:singleLine="true"
+                        android:text="@string/reset"
+                        android:textColor="#ffffffff"
+                        android:textSize="12.0sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@id/tts_speed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:layout_weight="1.0"
+                    android:max="40"
+                    android:progress="10"
+                    android:thumb="@drawable/scrubber_control_selector_holo3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="54.0dip"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip">
+
+            <ImageView
+                android:id="@id/tts_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="10.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:padding="11.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tts_stop" />
+
+            <View
+                android:layout_width="4.0dip"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:id="@id/tts_page_up"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="10.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:padding="10.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tts_page_up" />
+
+            <ImageView
+                android:id="@id/tts_prior"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="10.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:padding="10.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tts_prior" />
+
+            <ImageView
+                android:id="@id/tts_play"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="10.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:padding="10.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tts_pause" />
+
+            <ImageView
+                android:id="@id/tts_next"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="10.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:padding="10.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tts_next" />
+
+            <ImageView
+                android:id="@id/tts_page_down"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="10.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:padding="10.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tts_page_down" />
+
+            <View
+                android:layout_width="4.0dip"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:id="@id/tts_options"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="10.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:padding="10.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tts_options" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/notificationBar" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/sv" android:background="@color/material_blue_600" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageView android:id="@id/txtBackLay" android:background="@drawable/my_about_selector" android:padding="16.0dip" android:focusable="true" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/txtTitle" android:background="@drawable/my_about_selector" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:text="Zhou tian hai product" android:maxLines="1" android:layout_weight="5.0" />
+        <ImageView android:id="@id/pdfPen" android:background="@drawable/my_about_selector" android:padding="8.0dip" android:focusable="true" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/pen2" />
+        <ImageView android:id="@id/chromeSwitch" android:background="@drawable/my_about_selector" android:padding="8.0dip" android:focusable="true" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/chromebookview2" />
+        <ImageView android:id="@id/menuB" android:background="@drawable/my_about_selector" android:padding="12.0dip" android:focusable="true" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha" />
+    </LinearLayout>
+    <View android:background="@drawable/hl_top_shadow" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+</LinearLayout>

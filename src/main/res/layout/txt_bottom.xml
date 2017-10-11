@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="12.0dip"
+        android:background="@drawable/hl_btn_shadow" />
+
+    <LinearLayout
+        android:id="@id/sv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_blue_grey_100"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginTop="2.0dip"
+            android:focusable="false"
+            android:orientation="horizontal"
+            android:paddingBottom="4.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="4.0dip">
+
+            <SeekBar
+                android:id="@id/txtSeekBar01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5.0"
+                android:max="1000"
+                android:paddingRight="8.0dip"
+                android:progress="333"
+                android:thumb="@drawable/scrubber_control_selector_holo3" />
+
+            <TextView
+                android:id="@id/txtTextViewPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/my_about_selector"
+                android:gravity="center_vertical"
+                android:text="0.0%"
+                android:textColor="@color/material_grey_700"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@id/nav_return"
+                android:layout_width="40.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/my_about_selector"
+                android:focusable="true"
+                android:padding="4.0dip"
+                android:src="@drawable/nav_return" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#44555555" />
+
+        <LinearLayout
+            android:id="@id/buttonsLay"
+            android:layout_width="fill_parent"
+            android:layout_height="52.0dip"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginTop="2.0dip"
+            android:focusable="true"
+            android:paddingBottom="2.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="2.0dip">
+
+            <ImageButton
+                android:id="@id/b_orientation"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/screenorient" />
+
+            <ImageButton
+                android:id="@id/b_daynight"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/daynight" />
+
+            <ImageButton
+                android:id="@id/b_speak"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@id/b_autoscroll"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/scrollstart" />
+
+            <ImageButton
+                android:id="@id/b_bookmark"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bookmark" />
+
+            <ImageButton
+                android:id="@id/b_chapter"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/toc" />
+
+            <ImageButton
+                android:id="@id/b_brightness"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/brightness" />
+
+            <ImageButton
+                android:id="@id/b_fontsize"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/font" />
+
+            <ImageButton
+                android:id="@id/b_search"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/search" />
+
+            <ImageButton
+                android:id="@id/b_tilt"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tilt" />
+
+            <ImageButton
+                android:id="@id/b_visual"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/visualoptions" />
+
+            <ImageButton
+                android:id="@id/b_control"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/controloptions" />
+
+            <ImageButton
+                android:id="@id/b_misc"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/miscellaneous" />
+
+            <ImageButton
+                android:id="@id/b_option"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/options" />
+
+            <ImageButton
+                android:id="@id/b_shutdown"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6.0"
+                android:background="@drawable/my_about_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/shutdown" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

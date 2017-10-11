@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/txtFrame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:id="@id/contentLay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ViewStub
+            android:id="@id/pdfStub"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout="@layout/txt_pdf" />
+
+        <LinearLayout
+            android:id="@id/txtLay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ScrollView
+                android:id="@id/txtScrollView01"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5.0"
+                android:scrollbars="none">
+
+                <com.flyersoft.staticlayout.MRTextView
+                    android:id="@id/txtTextView01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+
+            <ScrollView
+                android:id="@id/txtScrollView02"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5.0"
+                android:scrollbars="none" >
+                <com.flyersoft.staticlayout.MRTextView
+                    android:id="@id/txtTextView02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@id/txtStatusLay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:id="@id/status2Page"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@id/statusMiddle21"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/my_list_selector"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="20.0dip"
+                    android:textSize="10.0sp" />
+
+                <TextView
+                    android:id="@id/statusMiddle22"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/my_list_selector"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="20.0dip"
+                    android:textSize="10.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@id/remainingLay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@id/remainingLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="4.0dip"
+                        android:textSize="10.0sp" />
+
+                    <TextView
+                        android:id="@id/remainingRight"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="4.0dip"
+                        android:singleLine="true"
+                        android:textSize="10.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/txtStatusLayHori"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@id/statusLeftPanel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/my_list_selector"
+                        android:clickable="true">
+
+                        <TextView
+                            android:id="@id/statusLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4.0dip"
+                            android:paddingLeft="5.0dip"
+                            android:paddingRight="3.0dip"
+                            android:singleLine="true"
+                            android:textSize="10.0sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@id/statusLeft2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="3.0dip"
+                            android:singleLine="true"
+                            android:textSize="10.0sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@id/statusMiddle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3.0"
+                        android:background="@drawable/my_list_selector"
+                        android:clickable="true"
+                        android:ellipsize="middle"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="30.0dip"
+                        android:paddingRight="30.0dip"
+                        android:singleLine="true"
+                        android:textSize="10.0sp" />
+
+                    <TextView
+                        android:id="@id/statusRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/my_list_selector"
+                        android:clickable="true"
+                        android:gravity="right"
+                        android:paddingRight="4.0dip"
+                        android:singleLine="true"
+                        android:textSize="10.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <com.flyersoft.staticlayout.DotImageView
+        android:id="@id/txtScrollPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/block"
+         />
+
+    <FrameLayout
+        android:id="@id/txtScrollLay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@id/flipImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@id/curl3dLay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@id/linkBackIv"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="15.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:background="@drawable/my_about_selector"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+
+
+    <ViewStub
+        android:id="@id/viewStub_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout="@layout/txt_top" />
+
+    <ViewStub
+        android:id="@id/viewStub_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout="@layout/txt_bottom" />
+
+    <ViewStub
+        android:id="@id/viewStub_brightness"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout="@layout/txt_brightness" />
+
+    <com.flyersoft.staticlayout.HighlightLay
+        android:id="@id/HighlightBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hbar"
+        android:orientation="vertical"
+         >
+
+        <LinearLayout
+            android:id="@id/HighlightBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip">
+
+            <ImageView
+                android:id="@id/penIv"
+                android:layout_width="40.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_list_selector"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pen"
+                 />
+
+            <View
+                android:id="@id/penSplit"
+                android:layout_width="1.0px"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:background="@drawable/splitter2"
+                />
+
+            <TextView
+                android:id="@id/copyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_list_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:text="@string/copy_text"
+                android:textColor="#ee303030"
+                android:textSize="17.0sp" />
+
+            <View
+                android:id="@id/View01"
+                android:layout_width="1.0px"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:background="@drawable/splitter2" />
+
+            <TextView
+                android:id="@id/highlightTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_list_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:text="@string/highlight"
+                android:textColor="#ee303030"
+                android:textSize="17.0sp" />
+
+            <View
+                android:id="@id/View01"
+                android:layout_width="1.0px"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:background="@drawable/splitter2" />
+
+            <TextView
+                android:id="@id/noteTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_list_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:text="@string/annotation"
+                android:textColor="#ee303030"
+                android:textSize="17.0sp" />
+
+            <View
+                android:id="@id/View01"
+                android:layout_width="1.0px"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:background="@drawable/splitter2" />
+
+            <TextView
+                android:id="@id/dictTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_list_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:text="@string/dictionary"
+                android:textColor="#ee303030"
+                android:textSize="17.0sp" />
+
+            <View
+                android:id="@id/View01"
+                android:layout_width="1.0px"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:background="@drawable/splitter2" />
+
+            <TextView
+                android:id="@id/shareTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_list_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:text="@string/more"
+                android:textColor="#ee303030"
+                android:textSize="17.0sp" />
+        </LinearLayout>
+    </com.flyersoft.staticlayout.HighlightLay>
+
+    <com.flyersoft.staticlayout.DotImageView
+        android:id="@id/dot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/text_select_handle_middle"
+         />
+
+    <om.flyersoft.staticlayout.DotImageView
+        android:id="@id/dot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/text_select_handle_middle"
+         />
+
+    <ImageView
+        android:id="@id/ttsB"
+        android:layout_width="64.0dip"
+        android:layout_height="64.0dip"
+        android:layout_gravity="bottom|center|right"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginRight="6.0dip"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/tts_button"
+        android:visibility="gone" />
+
+    <ViewStub
+        android:id="@id/viewStub1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout="@layout/tts_panel" />
+
+    <ViewStub
+        android:id="@id/tipStub"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout="@layout/tips_panel" />
+
+    <View
+        android:id="@id/shadeView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+</FrameLayout>

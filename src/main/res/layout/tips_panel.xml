@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#33000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#70000000">
+
+        <TextView
+            android:id="@id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_weight="1.0"
+            android:shadowColor="#ff000000"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="@string/Control_gestures"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@id/ofNeverAskAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/do_not_ask_again"
+            android:textColor="#ffffffff" />
+
+        <ImageView
+            android:id="@id/okB"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@drawable/my_about_selector"
+            android:paddingBottom="14.0dip"
+            android:paddingLeft="14.0dip"
+            android:paddingRight="14.0dip"
+            android:paddingTop="14.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cancel3" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="40.0dip"
+        android:scaleType="fitCenter" />
+</LinearLayout>

@@ -184,6 +184,7 @@ public class MRTextView extends MyTextView {
         }
     }
 
+    @Override
     public void onDraw(Canvas canvas) {
         if (A.lastFile == null) {
             super.onDraw(canvas);

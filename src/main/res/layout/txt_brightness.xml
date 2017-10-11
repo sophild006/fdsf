@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="12.0dip"
+        android:background="@drawable/hl_btn_shadow" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff909090"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="8.0dip"
+            android:text="@string/brightness"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2.0dip"
+            android:paddingRight="2.0dip">
+
+            <CheckBox
+                android:id="@id/autoCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginRight="4.0dip"
+                android:text="@string/auto"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <SeekBar
+                android:id="@id/brightnessSK"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5.0"
+                android:max="99"
+                android:thumb="@drawable/scrubber_control_selector_holo3" />
+
+            <TextView
+                android:id="@id/decTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_list_selector"
+                android:gravity="center"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:text="-"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@id/incTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_list_selector"
+                android:gravity="center"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:text="+"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@id/opacityCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginTop="2.0dip"
+            android:text="@string/bluelight_filter"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="14.0dip"
+            android:paddingRight="2.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="4.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:text="@string/bluelight_filter_opacity"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <SeekBar
+                android:id="@id/opacitySK"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5.0"
+                android:indeterminate="false"
+                android:max="80"
+                android:progress="30"
+                android:thumb="@drawable/scrubber_control_selector_holo3" />
+
+            <TextView
+                android:id="@id/decTv2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_list_selector"
+                android:gravity="center"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:text="-"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@id/incTv2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_list_selector"
+                android:gravity="center"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:text="+"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

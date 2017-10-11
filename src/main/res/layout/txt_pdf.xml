@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/base"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.radaee.reader.PDFReader
+        android:id="@id/PDFView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5.0" />
+
+    <LinearLayout
+        android:id="@id/searchLay"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_gravity="bottom"
+        android:background="@color/material_grey_700"
+        android:clickable="true"
+        android:paddingRight="6.0dip">
+
+        <ImageView
+            android:id="@id/optionB"
+            android:layout_width="36.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:background="@drawable/my_about_selector"
+            android:clickable="true"
+            android:paddingBottom="4.0dip"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="6.0dip"
+            android:paddingTop="8.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/searchoptions" />
+
+        <com.flyersoft.components.ClearableEditText
+            android:id="@id/keyEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@id/priorB"
+            android:layout_width="36.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="4.0dip"
+            android:background="@drawable/my_list_selector"
+            android:clickable="true"
+            android:padding="2.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_menu_back" />
+
+        <ImageView
+            android:id="@id/nextB"
+            android:layout_width="36.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/my_list_selector"
+            android:clickable="true"
+            android:padding="2.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_menu_forward" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/pdfTop"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="#ee333333">
+
+        <ImageView
+            android:id="@id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:background="@drawable/my_list_selector"
+            android:padding="6.0dip"
+            android:src="@drawable/pdf_text_icon" />
+
+        <ImageView
+            android:id="@id/imageView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:background="@drawable/my_list_selector"
+            android:padding="6.0dip"
+            android:src="@drawable/pdf_real_text" />
+
+        <ImageView
+            android:id="@id/imageView3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:background="@drawable/my_list_selector"
+            android:padding="6.0dip"
+            android:src="@drawable/pdf_handwriting" />
+
+        <ImageView
+            android:id="@id/imageView4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:background="@drawable/my_list_selector"
+            android:padding="6.0dip"
+            android:src="@drawable/pdf_line" />
+
+        <ImageView
+            android:id="@id/imageView5"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:background="@drawable/my_list_selector"
+            android:padding="6.0dip"
+            android:src="@drawable/pdf_arrow" />
+
+        <ImageView
+            android:id="@id/imageView6"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:background="@drawable/my_list_selector"
+            android:padding="6.0dip"
+            android:src="@drawable/pdf_rect" />
+
+        <ImageView
+            android:id="@id/imageView7"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:background="@drawable/my_list_selector"
+            android:padding="6.0dip"
+            android:src="@drawable/pdf_circle" />
+
+        <View
+            android:id="@id/View01"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="#ffbbbbbb" />
+
+        <ImageView
+            android:id="@id/imageView8"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:background="@drawable/my_list_selector"
+            android:padding="6.0dip"
+            android:src="@drawable/pdf_ok" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/pdfBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="70.0dip"
+        android:layout_marginRight="70.0dip"
+        android:background="#ee333333">
+
+        <ImageView
+            android:id="@id/ImageView02"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:background="@drawable/my_list_selector"
+            android:padding="6.0dip"
+            android:src="@drawable/pdf_thickness" />
+
+        <ImageView
+            android:id="@id/ImageView03"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:background="@drawable/my_list_selector"
+            android:padding="6.0dip"
+            android:src="@drawable/pdf_color" />
+
+        <ImageView
+            android:id="@id/ImageView04"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:background="@drawable/my_list_selector"
+            android:padding="6.0dip"
+            android:src="@drawable/pdf_fill" />
+
+        <ImageView
+            android:id="@id/ImageView05"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:background="@drawable/my_list_selector"
+            android:padding="6.0dip"
+            android:src="@drawable/pdf_note" />
+
+        <View
+            android:id="@id/View01"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="#ffbbbbbb" />
+
+        <ImageView
+            android:id="@id/ImageView01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:background="@drawable/my_list_selector"
+            android:padding="6.0dip"
+            android:src="@drawable/pdf_ok" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/pdfLockIv"
+        android:layout_width="58.0dip"
+        android:layout_height="58.0dip"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:background="@drawable/my_about_selector"
+        android:clickable="true"
+        android:padding="10.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/pdf_lock"
+        android:visibility="gone" />
+</FrameLayout>
